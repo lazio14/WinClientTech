@@ -3,6 +3,30 @@
 
 const char g_szClassName[] = "myWindowClass";
 
+BOOL CALLBACK AboutDlgProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
+{
+	switch(msg)
+    {
+	case WM_INITDIALOG:
+        return TRUE;
+
+	case WM_COMMAND:
+		switch(LOWORD(wParam))
+		{
+		case IDOK:
+			EndDialog(hwnd, IDOK);
+			break;
+		case IDCANCEL:
+			EndDialog(hwnd, IDCANCEL);
+			break;
+		}        
+		break;
+        default:
+            return FALSE;
+    }
+    return TRUE;
+}
+
 // Step 4: the Window Procedure
 LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
@@ -20,6 +44,19 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 			HINSTANCE hInstance = GetModuleHandle(NULL);
 			GetModuleFileName(hInstance, szModuleName, MAX_PATH);
 			MessageBox(hwnd, szModuleName, TEXT("Note"), MB_OK);
+			break;
+		}
+	case WM_COMMAND:
+		{
+			switch(LOWORD(wParam))
+			{
+			case ID_FILE_EXIT:
+				PostQuitMessage(0);
+				break;
+			}
+			case ID_STUFF_GO:
+				int nRet = DialogBox(GetModuleHandle(NULL), MAKEINTRESOURCE(IDD_ABOUT), hwnd, AboutDlgProc);
+				break;
 			break;
 		}
 	default:

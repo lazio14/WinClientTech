@@ -56,8 +56,17 @@ BEGIN
     "\r\n"
     "IDI_MYICON ICON ""SimpleWindowIcon.ico""\r\n"
     "\r\n"
-    "\r\n"
-    "\0"
+    "IDD_ABOUT DIALOG DISCARDABLE  0, 0, 239, 66\r\n"
+    "STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU\r\n"
+    "CAPTION ""My About Box""\r\n"
+    "FONT 8, ""MS Sans Serif""\r\n"
+    "BEGIN\r\n"
+    "    DEFPUSHBUTTON   ""&OK"",IDOK,174,18,50,14\r\n"
+    "    PUSHBUTTON      ""&Cancel"",IDCANCEL,174,35,50,14\r\n"
+    "    GROUPBOX        ""About this program..."",IDC_STATIC,7,7,225,52\r\n"
+    "    CTEXT           ""An example program showing how to use Dialog Boxes\\r\\n\\r\\nby theForger"",\r\n"
+    "                    IDC_STATIC,16,18,144,33\r\n"
+    "END\0"
 END
 
 #endif    // APSTUDIO_INVOKED
@@ -88,8 +97,17 @@ END
 
 IDI_MYICON ICON "SimpleWindowIcon.ico"
 
-
-
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 239, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "My About Box"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,174,18,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,174,35,50,14
+    GROUPBOX        "About this program...",IDC_STATIC,7,7,225,52
+    CTEXT           "An example program showing how to use Dialog Boxes\r\n\r\nby theForger",
+                    IDC_STATIC,16,18,144,33
+END
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
 
