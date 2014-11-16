@@ -8,7 +8,6 @@
 // Generated from the TEXTINCLUDE 2 resource.
 //
 #include "afxres.h"
-
 /////////////////////////////////////////////////////////////////////////////
 #undef APSTUDIO_READONLY_SYMBOLS
 
@@ -34,8 +33,7 @@ END
 
 2 TEXTINCLUDE DISCARDABLE 
 BEGIN
-    "#include ""afxres.h""\r\n"
-    "\0"
+    "#include ""afxres.h""\0"
 END
 
 3 TEXTINCLUDE DISCARDABLE 
@@ -66,6 +64,16 @@ BEGIN
     "    GROUPBOX        ""About this program..."",IDC_STATIC,7,7,225,52\r\n"
     "    CTEXT           ""An example program showing how to use Dialog Boxes\\r\\n\\r\\nby theForger"",\r\n"
     "                    IDC_STATIC,16,18,144,33\r\n"
+    "END\r\n"
+    "\r\n"
+    "IDD_TOOLBAR DIALOGEX 0, 0, 98, 52\r\n"
+    "STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION\r\n"
+    "EXSTYLE WS_EX_TOOLWINDOW\r\n"
+    "CAPTION ""My Dialog Toolbar""\r\n"
+    "FONT 8, ""MS Sans Serif""\r\n"
+    "BEGIN\r\n"
+    "    PUSHBUTTON      ""&Press This Button"",ID_TOOLBAR_1,7,7,84,14\r\n"
+    "    PUSHBUTTON      ""&Or This One"",ID_TOOLBAR_2,7,31,84,14\r\n"
     "END\0"
 END
 
@@ -107,6 +115,16 @@ BEGIN
     GROUPBOX        "About this program...",IDC_STATIC,7,7,225,52
     CTEXT           "An example program showing how to use Dialog Boxes\r\n\r\nby theForger",
                     IDC_STATIC,16,18,144,33
+END
+
+IDD_TOOLBAR DIALOGEX 0, 0, 98, 52
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "My Dialog Toolbar"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Press This Button",ID_TOOLBAR_1,7,7,84,14
+    PUSHBUTTON      "&Or This One",ID_TOOLBAR_2,7,31,84,14
 END
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
