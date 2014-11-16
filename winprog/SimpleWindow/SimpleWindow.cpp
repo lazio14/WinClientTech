@@ -13,6 +13,14 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 	case WM_DESTROY:
 		PostQuitMessage(0);
         break;
+	case WM_LBUTTONDOWN:
+		{
+			TCHAR szModuleName[MAX_PATH] = {0};
+			HINSTANCE hInstance = GetModuleHandle(NULL);
+			GetModuleFileName(hInstance, szModuleName, MAX_PATH);
+			MessageBox(hwnd, szModuleName, TEXT("Note"), MB_OK);
+			break;
+		}
 	default:
 		return DefWindowProc(hwnd, msg, wParam, lParam);
     }
