@@ -88,6 +88,10 @@ LINK32=link.exe
 # Begin Group "Source Files"
 
 # PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+# Begin Source File
+
+SOURCE=.\SimpleWindow.cpp
+# End Source File
 # End Group
 # Begin Group "Header Files"
 
@@ -96,6 +100,14 @@ LINK32=link.exe
 # Begin Group "Resource Files"
 
 # PROP Default_Filter "ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
+# Begin Source File
+
+SOURCE=.\resource.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\winRes.rc
+# End Source File
 # End Group
 # End Target
 # End Project
