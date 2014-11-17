@@ -44,3 +44,4 @@ Icon
 *.pch
 *.idb
 *.aps
+winprog/app_one/Debug/appRes.res
