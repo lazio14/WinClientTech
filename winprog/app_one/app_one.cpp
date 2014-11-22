@@ -1,8 +1,16 @@
 #include <windows.h>
+#include <commctrl.h>
 #include "resource.h"
+#include <afxres.h>
 #define IDC_MAIN_EDIT	101
+#define IDC_MAIN_TOOL   102
+#define IDC_MAIN_STATUS 103
+
+#define TOOLBAR_BTN_SUM 3
 
 const char g_szClassName[] = "myWindowClass";
+TBBUTTON tbb[TOOLBAR_BTN_SUM];
+TBADDBITMAP tbab;
 
 BOOL SaveTextFileFromEdit(HWND hEdit, LPCTSTR pszFileName)
 {
@@ -210,14 +218,52 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
         WS_OVERLAPPEDWINDOW,
         CW_USEDEFAULT, CW_USEDEFAULT, 240, 120,
         NULL, NULL, hInstance, NULL);
-	
-    if(hwnd == NULL)
+
+	if(hwnd == NULL)
     {
         MessageBox(NULL, "Window Creation Failed!", "Error!",
             MB_ICONEXCLAMATION | MB_OK);
         return 0;
     }
+
+	InitCommonControls();
+	HWND hTool = CreateWindowEx(0, TOOLBARCLASSNAME, NULL, WS_CHILD | WS_VISIBLE, 0, 0, 0, 0,
+        hwnd, (HMENU)IDC_MAIN_TOOL, GetModuleHandle(NULL), NULL);
+
+	// Send the TB_BUTTONSTRUCTSIZE message, which is required for
+	// backward compatibility.
+	SendMessage(hTool, TB_BUTTONSTRUCTSIZE, (WPARAM)sizeof(TBBUTTON), 0);
+
+	tbab.hInst = HINST_COMMCTRL;
+	tbab.nID = IDB_STD_SMALL_COLOR;
+	SendMessage(hTool, TB_ADDBITMAP, 0, (LPARAM)&tbab);
+
+	ZeroMemory(tbb, sizeof(tbb));
+	tbb[0].iBitmap = STD_FILENEW;
+	tbb[0].fsState = TBSTATE_ENABLED;
+	tbb[0].fsStyle = TBSTYLE_BUTTON;
+	tbb[0].idCommand = ID_FILE_NEW;
+
+	tbb[1].iBitmap = STD_FILEOPEN;
+	tbb[1].fsState = TBSTATE_ENABLED;
+	tbb[1].fsStyle = TBSTYLE_BUTTON;
+	tbb[1].idCommand = ID_FILE_OPEN_TEST;//ID_FILE_OPEN;
+
+	tbb[2].iBitmap = STD_FILESAVE;
+	tbb[2].fsState = TBSTATE_ENABLED;
+	tbb[2].fsStyle = TBSTYLE_BUTTON;
+	tbb[2].idCommand = ID_FILE_SAVE_TEST;
+
+	SendMessage(hTool, TB_ADDBUTTONS, sizeof(tbb) / sizeof(tbb[0]), (LPARAM)&tbb);
+
+
+	HWND hStatus = CreateWindowEx(0, STATUSCLASSNAME, NULL, WS_CHILD | WS_VISIBLE | SBARS_SIZEGRIP,
+		0, 0, 0, 0, hwnd, (HMENU)IDC_MAIN_STATUS, GetModuleHandle(NULL), NULL);
 	
+	int statwidths[] = {100, -1};
+	SendMessage(hStatus, SB_SETPARTS, sizeof(statwidths) / sizeof(statwidths[0]), (LPARAM)statwidths);
+	SendMessage(hStatus, SB_SETTIPTEXT, 0, (LPARAM)TEXT("hi there"));
+
     ShowWindow(hwnd, nCmdShow);
     UpdateWindow(hwnd);
 	
