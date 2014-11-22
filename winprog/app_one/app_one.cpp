@@ -95,7 +95,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
         break;
 	case WM_DESTROY:
 		PostQuitMessage(0);
-        break;
+        break;	
 	case WM_CREATE:
 		{
 			HFONT hfDefault = NULL;
@@ -163,17 +163,16 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 					}
 				}
 				break;
+			case ID_FILE_NEW: 
+				{
+					HWND hEdit = GetDlgItem(hwnd, IDC_MAIN_EDIT);
+					SendMessage(hEdit, WM_SETTEXT, 0, (LPARAM)TEXT(""));
+				}	
 			}
 		}
 		break;	
 	case WM_SIZE:
 		{
-// 			HWND hEdit;
-// 			RECT rcClient;
-// 
-// 			GetClientRect(hwnd, &rcClient);
-// 			hEdit = GetDlgItem(hwnd, IDC_MAIN_EDIT);
-// 			SetWindowPos(hEdit, NULL, 0, 0, rcClient.right, rcClient.bottom, SWP_NOZORDER);
 			HWND hTool;
 			RECT rcTool;
 			int nToolHeight = 0;
@@ -243,7 +242,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
         g_szClassName,
         "The title of my window",
         WS_OVERLAPPEDWINDOW,
-        CW_USEDEFAULT, CW_USEDEFAULT, 240, 120,
+        CW_USEDEFAULT, CW_USEDEFAULT, GetSystemMetrics(SM_CXSCREEN), GetSystemMetrics(SM_CYSCREEN),
         NULL, NULL, hInstance, NULL);
 
 	if(hwnd == NULL)
