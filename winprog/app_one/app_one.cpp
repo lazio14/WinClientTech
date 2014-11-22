@@ -168,12 +168,39 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 		break;	
 	case WM_SIZE:
 		{
-			HWND hEdit;
-			RECT rcClient;
+// 			HWND hEdit;
+// 			RECT rcClient;
+// 
+// 			GetClientRect(hwnd, &rcClient);
+// 			hEdit = GetDlgItem(hwnd, IDC_MAIN_EDIT);
+// 			SetWindowPos(hEdit, NULL, 0, 0, rcClient.right, rcClient.bottom, SWP_NOZORDER);
+			HWND hTool;
+			RECT rcTool;
+			int nToolHeight = 0;
 
+			HWND hStatus;
+			RECT rcStatus;
+			int nStatusHeight = 0;
+
+			HWND hEdit;
+			RECT rcEdit;
+			int nEditHeigth;
+
+			hTool = GetDlgItem(hwnd, IDC_MAIN_TOOL);
+			SendMessage(hTool, TB_AUTOSIZE, 0, 0);
+			GetClientRect(hTool, &rcTool);
+			nToolHeight = rcTool.bottom - rcTool.top;
+
+			hStatus = GetDlgItem(hwnd, IDC_MAIN_STATUS);
+			SendMessage(hStatus, WM_SIZE, 0, 0);
+			GetClientRect(hStatus, &rcStatus);
+			nStatusHeight = rcStatus.bottom - rcStatus.top;
+
+			RECT rcClient;
 			GetClientRect(hwnd, &rcClient);
+
 			hEdit = GetDlgItem(hwnd, IDC_MAIN_EDIT);
-			SetWindowPos(hEdit, NULL, 0, 0, rcClient.right, rcClient.bottom, SWP_NOZORDER);
+			SetWindowPos(hEdit, NULL, 0, nToolHeight, rcClient.right, rcClient.bottom - nToolHeight - nStatusHeight, SWP_NOZORDER);
 		}
 		break;
 	default:
@@ -260,9 +287,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	HWND hStatus = CreateWindowEx(0, STATUSCLASSNAME, NULL, WS_CHILD | WS_VISIBLE | SBARS_SIZEGRIP,
 		0, 0, 0, 0, hwnd, (HMENU)IDC_MAIN_STATUS, GetModuleHandle(NULL), NULL);
 	
-	int statwidths[] = {100, -1};
+	int statwidths[] = {200, -1};
 	SendMessage(hStatus, SB_SETPARTS, sizeof(statwidths) / sizeof(statwidths[0]), (LPARAM)statwidths);
-	SendMessage(hStatus, SB_SETTIPTEXT, 0, (LPARAM)TEXT("hi there"));
+	SendMessage(hStatus, SB_SETTEXT, 0, (LPARAM)TEXT("hi there"));
 
     ShowWindow(hwnd, nCmdShow);
     UpdateWindow(hwnd);
