@@ -45,3 +45,5 @@ Icon
 *.idb
 *.aps
 winprog/app_one/Debug/appRes.res
+winprog/winprog.opt
+winprog/winprog.positions
