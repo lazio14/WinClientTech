@@ -3,7 +3,31 @@ Microsoft Developer Studio Workspace File, Format Version 6.00
 
 ###############################################################################
 
-Project: "Singleton"=.\Singleton\Singleton.dsp - Package Owner=<4>
+Project: "CreateInheritHandle"=.\CreateInheritHandle\CreateInheritHandle.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "WriteFileByInheritHandle"=.\WriteFileByInheritHandle\WriteFileByInheritHandle.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "singleton"=.\singleton\singleton.dsp - Package Owner=<4>
 
 Package=<5>
 {{{

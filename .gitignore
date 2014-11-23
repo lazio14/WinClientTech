@@ -49,3 +49,7 @@ winprog/winprog.opt
 winprog/winprog.positions
 *.opt
 *.positions
+WindowsViaCppPratise/WriteFileByInheritHandle/Debug/test.txt
+WindowsViaCppPratise/WriteFileByInheritHandle/ReadMe.txt
+WindowsViaCppPratise/CreateInheritHandle/test.txt
+WindowsViaCppPratise/CreateInheritHandle/ReadMe.txt
