@@ -53,3 +53,6 @@ WindowsViaCppPratise/WriteFileByInheritHandle/Debug/test.txt
 WindowsViaCppPratise/WriteFileByInheritHandle/ReadMe.txt
 WindowsViaCppPratise/CreateInheritHandle/test.txt
 WindowsViaCppPratise/CreateInheritHandle/ReadMe.txt
+WindowsViaCppPratise/SetHandleInformation/Debug/test.txt
+WindowsViaCppPratise/SetHandleInformation/ReadMe.txt
+WindowsViaCppPratise/SetHandleInformation/test.txt
