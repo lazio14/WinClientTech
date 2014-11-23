@@ -47,3 +47,5 @@ Icon
 winprog/app_one/Debug/appRes.res
 winprog/winprog.opt
 winprog/winprog.positions
+*.opt
+*.positions
