@@ -56,3 +56,6 @@ WindowsViaCppPratise/CreateInheritHandle/ReadMe.txt
 WindowsViaCppPratise/SetHandleInformation/Debug/test.txt
 WindowsViaCppPratise/SetHandleInformation/ReadMe.txt
 WindowsViaCppPratise/SetHandleInformation/test.txt
+*.sdf
+*.suo
+*.filters
