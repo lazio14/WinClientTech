@@ -31,7 +31,21 @@ int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
 	sei.lpVerb = TEXT("runas");
 	sei.lpFile = TEXT("cmd.exe");
 	sei.nShow = SW_SHOWNORMAL;
-	ShellExecuteEx(&sei);
+	
+	if (!ShellExecuteEx(&sei))
+	{
+		DWORD dwStatus = GetLastError();
+		if (dwStatus == ERROR_CANCELLED)
+		{
+			::MessageBox(NULL, TEXT("ERROR_FILE_NOT_FOUND"), TEXT("TIP"), NULL);
+		}
+		else if (dwStatus == ERROR_FILE_NOT_FOUND)
+		{
+			::MessageBox(NULL, TEXT("ERROR_FILE_NOT_FOUND"), TEXT("TIP"), NULL);
+		}
+	}
+
+
 
 	MSG msg;
 	HACCEL hAccelTable;
