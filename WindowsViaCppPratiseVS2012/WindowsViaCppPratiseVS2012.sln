@@ -5,6 +5,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GetModuleTest", "GetModuleT
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "inherite", "inherite\inherite.vcxproj", "{4ADE4290-C9A1-4993-BEF6-9CC070D432D2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShellExecuteTest", "ShellExecuteTest\ShellExecuteTest.vcxproj", "{E65C3FF4-C960-412D-981C-CF9694451A61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +21,10 @@ Global
 		{4ADE4290-C9A1-4993-BEF6-9CC070D432D2}.Debug|Win32.Build.0 = Debug|Win32
 		{4ADE4290-C9A1-4993-BEF6-9CC070D432D2}.Release|Win32.ActiveCfg = Release|Win32
 		{4ADE4290-C9A1-4993-BEF6-9CC070D432D2}.Release|Win32.Build.0 = Release|Win32
+		{E65C3FF4-C960-412D-981C-CF9694451A61}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E65C3FF4-C960-412D-981C-CF9694451A61}.Debug|Win32.Build.0 = Debug|Win32
+		{E65C3FF4-C960-412D-981C-CF9694451A61}.Release|Win32.ActiveCfg = Release|Win32
+		{E65C3FF4-C960-412D-981C-CF9694451A61}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

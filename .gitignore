@@ -26,7 +26,8 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must ends with two \r.
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -44,18 +45,16 @@ Icon
 *.pch
 *.idb
 *.aps
-winprog/app_one/Debug/appRes.res
-winprog/winprog.opt
-winprog/winprog.positions
 *.opt
 *.positions
-WindowsViaCppPratise/WriteFileByInheritHandle/Debug/test.txt
-WindowsViaCppPratise/WriteFileByInheritHandle/ReadMe.txt
-WindowsViaCppPratise/CreateInheritHandle/test.txt
-WindowsViaCppPratise/CreateInheritHandle/ReadMe.txt
-WindowsViaCppPratise/SetHandleInformation/Debug/test.txt
-WindowsViaCppPratise/SetHandleInformation/ReadMe.txt
-WindowsViaCppPratise/SetHandleInformation/test.txt
 *.sdf
 *.suo
 *.filters
+*.tlog
+*.lastbuildstate
+*.log
+*.ipch
+*.opensdf
+[Bb]in
+[Dd]ebug
+[Rr]elease
