@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StartRestrictedProcess", "S
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForverLoop", "ForverLoop\ForverLoop.vcxproj", "{3404D937-3BDC-4451-8037-61CDB90B0C22}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ThreadTest", "ThreadTest\ThreadTest.vcxproj", "{21B36B9A-ADB2-404B-A07A-B6C630ED816B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -43,6 +45,10 @@ Global
 		{3404D937-3BDC-4451-8037-61CDB90B0C22}.Debug|Win32.Build.0 = Debug|Win32
 		{3404D937-3BDC-4451-8037-61CDB90B0C22}.Release|Win32.ActiveCfg = Release|Win32
 		{3404D937-3BDC-4451-8037-61CDB90B0C22}.Release|Win32.Build.0 = Release|Win32
+		{21B36B9A-ADB2-404B-A07A-B6C630ED816B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{21B36B9A-ADB2-404B-A07A-B6C630ED816B}.Debug|Win32.Build.0 = Debug|Win32
+		{21B36B9A-ADB2-404B-A07A-B6C630ED816B}.Release|Win32.ActiveCfg = Release|Win32
+		{21B36B9A-ADB2-404B-A07A-B6C630ED816B}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
