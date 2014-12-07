@@ -7,6 +7,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "inherite", "inherite\inheri
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShellExecuteTest", "ShellExecuteTest\ShellExecuteTest.vcxproj", "{E65C3FF4-C960-412D-981C-CF9694451A61}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CloseJobHandle", "CloseJobHandle\CloseJobHandle.vcxproj", "{C977EA0A-794B-4DCE-AAE5-1848FD3E2F43}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StartRestrictedProcess", "StartRestrictedProcess\StartRestrictedProcess.vcxproj", "{376134B2-0C8B-477B-A893-BAAA2DF52B12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -25,6 +29,14 @@ Global
 		{E65C3FF4-C960-412D-981C-CF9694451A61}.Debug|Win32.Build.0 = Debug|Win32
 		{E65C3FF4-C960-412D-981C-CF9694451A61}.Release|Win32.ActiveCfg = Release|Win32
 		{E65C3FF4-C960-412D-981C-CF9694451A61}.Release|Win32.Build.0 = Release|Win32
+		{C977EA0A-794B-4DCE-AAE5-1848FD3E2F43}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C977EA0A-794B-4DCE-AAE5-1848FD3E2F43}.Debug|Win32.Build.0 = Debug|Win32
+		{C977EA0A-794B-4DCE-AAE5-1848FD3E2F43}.Release|Win32.ActiveCfg = Release|Win32
+		{C977EA0A-794B-4DCE-AAE5-1848FD3E2F43}.Release|Win32.Build.0 = Release|Win32
+		{376134B2-0C8B-477B-A893-BAAA2DF52B12}.Debug|Win32.ActiveCfg = Debug|Win32
+		{376134B2-0C8B-477B-A893-BAAA2DF52B12}.Debug|Win32.Build.0 = Debug|Win32
+		{376134B2-0C8B-477B-A893-BAAA2DF52B12}.Release|Win32.ActiveCfg = Release|Win32
+		{376134B2-0C8B-477B-A893-BAAA2DF52B12}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
