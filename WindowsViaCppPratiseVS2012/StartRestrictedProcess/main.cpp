@@ -62,8 +62,8 @@ void StartRestrictedProcess()
 	FILETIME UserTime;
 	TCHAR szInfo[MAX_PATH] = {0};
 	GetProcessTimes(pi.hProcess, &CreateionTime, &ExitTime, &KernelTime, &UserTime);
-	StringCchPrintf(szInfo, _countof(szInfo), TEXT("Kernel = %u | Uer = %u\n"),
-		KernelTime.dwLowDateTime / 10000, UserTime.dwLowDateTime / 10000);
+	StringCchPrintf(szInfo, _countof(szInfo), TEXT("Kernel = %u %u | Uer = %u %u\n"),
+		KernelTime.dwHighDateTime, KernelTime.dwLowDateTime, UserTime.dwHighDateTime, UserTime.dwLowDateTime);
 	MessageBox(GetActiveWindow(), szInfo, TEXT("Restricted Process times"), 
 		MB_ICONINFORMATION | MB_OK);
 
