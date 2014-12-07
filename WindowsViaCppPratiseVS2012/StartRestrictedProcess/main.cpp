@@ -16,22 +16,35 @@ void StartRestrictedProcess()
 		::MessageBox(NULL, TEXT("OK"), TEXT("TIP"), MB_OK);
 	}
 
-	HANDLE hjob = CreateJobObject(NULL, TEXT("RestrictedProcessJob"));
+	HANDLE hjob = CreateJobObject(NULL, TEXT("Wintellect_RestrictedProcessJob"));
+
 	JOBOBJECT_BASIC_LIMIT_INFORMATION jobli = {0};
 	jobli.PriorityClass = IDLE_PRIORITY_CLASS;
-	jobli.PerProcessUserTimeLimit.QuadPart = 10000;
+	jobli.PerJobUserTimeLimit.QuadPart = 1;
 	jobli.LimitFlags = JOB_OBJECT_LIMIT_PRIORITY_CLASS | JOB_OBJECT_LIMIT_JOB_TIME;
-	SetInformationJobObject(hjob, JobObjectBasicLimitInformation, &jobli, sizeof(jobli));
+	BOOL bRes = SetInformationJobObject(hjob, JobObjectBasicLimitInformation, &jobli, sizeof(JOBOBJECT_BASIC_LIMIT_INFORMATION));
+
+	if (!bRes)
+	{
+		DWORD dwError = GetLastError();
+		TCHAR szErrorInfo[MAX_PATH] = {0};
+		StringCchPrintf(szErrorInfo, _countof(szErrorInfo), TEXT("error = %u"), dwError);
+		::MessageBox(NULL, szErrorInfo, TEXT("TIP"), MB_OK);
+	}
 
 	JOBOBJECT_BASIC_UI_RESTRICTIONS jobuir;
 	jobuir.UIRestrictionsClass = JOB_OBJECT_UILIMIT_NONE;
 	jobuir.UIRestrictionsClass |= JOB_OBJECT_UILIMIT_EXITWINDOWS;
 	jobuir.UIRestrictionsClass |= JOB_OBJECT_UILIMIT_HANDLES;
-	SetInformationJobObject(hjob, JobObjectBasicUIRestrictions, &jobuir, sizeof(jobuir));
+	bRes = SetInformationJobObject(hjob, JobObjectBasicUIRestrictions, &jobuir, sizeof(jobuir));
+	if (!bRes)
+	{
+		::MessageBox(NULL, TEXT("error2"), TEXT("TIP"), MB_OK);
+	}
 
 	STARTUPINFO si = {sizeof(si)};
 	PROCESS_INFORMATION pi;
-	TCHAR szCmdLine[8] = {0};
+	TCHAR szCmdLine[MAX_PATH] = {0};
 	_tcscpy_s(szCmdLine, _countof(szCmdLine), TEXT("CMD"));
 	BOOL bResult = CreateProcess(NULL, szCmdLine, NULL, NULL, FALSE, CREATE_SUSPENDED | CREATE_NEW_CONSOLE, NULL, NULL, &si, &pi);
 
