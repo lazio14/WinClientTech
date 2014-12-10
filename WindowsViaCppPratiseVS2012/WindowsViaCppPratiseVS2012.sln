@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SuspendProcess", "SuspendPr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PerformLongOperation", "PerformLongOperation\PerformLongOperation.vcxproj", "{1252FFDB-21CC-42E5-A78A-646812FBD1AB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InterLock", "InterLock\InterLock.vcxproj", "{7A811C21-FACD-488B-B500-A9E759E80EF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -61,6 +63,10 @@ Global
 		{1252FFDB-21CC-42E5-A78A-646812FBD1AB}.Debug|Win32.Build.0 = Debug|Win32
 		{1252FFDB-21CC-42E5-A78A-646812FBD1AB}.Release|Win32.ActiveCfg = Release|Win32
 		{1252FFDB-21CC-42E5-A78A-646812FBD1AB}.Release|Win32.Build.0 = Release|Win32
+		{7A811C21-FACD-488B-B500-A9E759E80EF4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7A811C21-FACD-488B-B500-A9E759E80EF4}.Debug|Win32.Build.0 = Debug|Win32
+		{7A811C21-FACD-488B-B500-A9E759E80EF4}.Release|Win32.ActiveCfg = Release|Win32
+		{7A811C21-FACD-488B-B500-A9E759E80EF4}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
