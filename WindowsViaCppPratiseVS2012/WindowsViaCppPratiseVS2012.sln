@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EventTest", "EventTest\Even
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WaitableTimerTest", "WaitableTimerTest\WaitableTimerTest.vcxproj", "{C8C4D5A7-6B1B-4560-96DB-C6CCFA675123}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "APCTest", "APCTest\APCTest.vcxproj", "{92DEC99D-5636-4453-A4EC-5D9A1398BAAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -97,6 +99,10 @@ Global
 		{C8C4D5A7-6B1B-4560-96DB-C6CCFA675123}.Debug|Win32.Build.0 = Debug|Win32
 		{C8C4D5A7-6B1B-4560-96DB-C6CCFA675123}.Release|Win32.ActiveCfg = Release|Win32
 		{C8C4D5A7-6B1B-4560-96DB-C6CCFA675123}.Release|Win32.Build.0 = Release|Win32
+		{92DEC99D-5636-4453-A4EC-5D9A1398BAAB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{92DEC99D-5636-4453-A4EC-5D9A1398BAAB}.Debug|Win32.Build.0 = Debug|Win32
+		{92DEC99D-5636-4453-A4EC-5D9A1398BAAB}.Release|Win32.ActiveCfg = Release|Win32
+		{92DEC99D-5636-4453-A4EC-5D9A1398BAAB}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
