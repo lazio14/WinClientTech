@@ -19,7 +19,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SuspendProcess", "SuspendPr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PerformLongOperation", "PerformLongOperation\PerformLongOperation.vcxproj", "{1252FFDB-21CC-42E5-A78A-646812FBD1AB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InterLock", "InterLock\InterLock.vcxproj", "{7A811C21-FACD-488B-B500-A9E759E80EF4}"
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ThreadContext", "ThreadContext\ThreadContext.vcxproj", "{8529AB41-DC2A-43D8-9FCF-0D0891B5B889}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Priority", "Priority\Priority.vcxproj", "{4116D5AC-41BD-4BBE-9280-A415C851E2E1}"
@@ -27,6 +26,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PriorityBoost", "PriorityBoost\PriorityBoost.vcxproj", "{500C6B7B-0012-408F-9103-7C15BE382EA0}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WaitObjectTest", "WaitObjectTest\WaitObjectTest.vcxproj", "{40919A78-14B9-46C4-B9C4-A7C39210FE1E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EventTest", "EventTest\EventTest.vcxproj", "{F495BCB8-6FD6-43E4-8C01-0667DC28D7FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,10 +71,6 @@ Global
 		{1252FFDB-21CC-42E5-A78A-646812FBD1AB}.Debug|Win32.Build.0 = Debug|Win32
 		{1252FFDB-21CC-42E5-A78A-646812FBD1AB}.Release|Win32.ActiveCfg = Release|Win32
 		{1252FFDB-21CC-42E5-A78A-646812FBD1AB}.Release|Win32.Build.0 = Release|Win32
-		{7A811C21-FACD-488B-B500-A9E759E80EF4}.Debug|Win32.ActiveCfg = Debug|Win32
-		{7A811C21-FACD-488B-B500-A9E759E80EF4}.Debug|Win32.Build.0 = Debug|Win32
-		{7A811C21-FACD-488B-B500-A9E759E80EF4}.Release|Win32.ActiveCfg = Release|Win32
-		{7A811C21-FACD-488B-B500-A9E759E80EF4}.Release|Win32.Build.0 = Release|Win32
 		{8529AB41-DC2A-43D8-9FCF-0D0891B5B889}.Debug|Win32.ActiveCfg = Debug|Win32
 		{8529AB41-DC2A-43D8-9FCF-0D0891B5B889}.Debug|Win32.Build.0 = Debug|Win32
 		{8529AB41-DC2A-43D8-9FCF-0D0891B5B889}.Release|Win32.ActiveCfg = Release|Win32
@@ -90,6 +87,10 @@ Global
 		{40919A78-14B9-46C4-B9C4-A7C39210FE1E}.Debug|Win32.Build.0 = Debug|Win32
 		{40919A78-14B9-46C4-B9C4-A7C39210FE1E}.Release|Win32.ActiveCfg = Release|Win32
 		{40919A78-14B9-46C4-B9C4-A7C39210FE1E}.Release|Win32.Build.0 = Release|Win32
+		{F495BCB8-6FD6-43E4-8C01-0667DC28D7FA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F495BCB8-6FD6-43E4-8C01-0667DC28D7FA}.Debug|Win32.Build.0 = Debug|Win32
+		{F495BCB8-6FD6-43E4-8C01-0667DC28D7FA}.Release|Win32.ActiveCfg = Release|Win32
+		{F495BCB8-6FD6-43E4-8C01-0667DC28D7FA}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
