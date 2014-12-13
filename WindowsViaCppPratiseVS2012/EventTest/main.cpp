@@ -10,6 +10,7 @@ DWORD WINAPI WordCount(PVOID pvParam)
 	{
 		cout << i << endl;
 	}
+	SetEvent(g_hEvent);
 	return 0;
 }
 
@@ -20,6 +21,7 @@ DWORD WINAPI SpellCheck(PVOID pvParam)
 	{
 		cout << i << endl;
 	}
+	SetEvent(g_hEvent);
 	return 0;
 }
 
@@ -30,12 +32,14 @@ DWORD WINAPI GrammarCheck(PVOID pvParam)
 	{
 		cout << i << endl;
 	}
+	SetEvent(g_hEvent);
 	return 0;
 }
 
 void main()
 {
-	g_hEvent = CreateEvent(NULL, TRUE, FALSE, NULL);
+	//g_hEvent = CreateEvent(NULL, TRUE, FALSE, NULL);
+	g_hEvent = CreateEvent(NULL, FALSE, FALSE, NULL);
 	HANDLE hThread[3];
 	DWORD dwThreadId = 0;
 	hThread[0] = CreateThread(NULL, 0, WordCount, NULL, 0, &dwThreadId);
