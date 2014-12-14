@@ -14,4 +14,11 @@ void main()
 
 	ULARGE_INTEGER ulFileSize;
 	ulFileSize.LowPart = GetCompressedFileSize(TEXT("filesize.txt"), &ulFileSize.HighPart);
+
+	LARGE_INTEGER liDistanceToMove;
+	liDistanceToMove.QuadPart = 1024;
+	SetFilePointerEx(hFile, liDistanceToMove, NULL, FILE_BEGIN);
+	SetEndOfFile(hFile);
+
+	CloseHandle(hFile);
 }

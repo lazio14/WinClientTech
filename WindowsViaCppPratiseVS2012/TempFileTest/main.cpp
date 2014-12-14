@@ -13,8 +13,7 @@ void main()
 	char chBuffer[BUFSIZE];         
 	memcpy(chBuffer,"Test",4);
 	DWORD dwWritenSize = 0;
-	BOOL bRet = ::WriteFile(hFile, chBuffer, 4, &dw
-		WritenSize, NULL);
+	BOOL bRet = ::WriteFile(hFile, chBuffer, 4, &dwWritenSize, NULL);
 
 	system("pause");
 	memset(chBuffer, 0, sizeof(chBuffer));
