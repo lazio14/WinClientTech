@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileSizeTest", "FileSizeTes
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileKernelObj", "FileKernelObj\FileKernelObj.vcxproj", "{F71303C5-EC0E-46BE-9F91-232237E15DFB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileEventObj", "FileEventObj\FileEventObj.vcxproj", "{5F3DBE5F-A581-4EE3-B240-3998EE8D94BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -127,6 +129,10 @@ Global
 		{F71303C5-EC0E-46BE-9F91-232237E15DFB}.Debug|Win32.Build.0 = Debug|Win32
 		{F71303C5-EC0E-46BE-9F91-232237E15DFB}.Release|Win32.ActiveCfg = Release|Win32
 		{F71303C5-EC0E-46BE-9F91-232237E15DFB}.Release|Win32.Build.0 = Release|Win32
+		{5F3DBE5F-A581-4EE3-B240-3998EE8D94BD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5F3DBE5F-A581-4EE3-B240-3998EE8D94BD}.Debug|Win32.Build.0 = Debug|Win32
+		{5F3DBE5F-A581-4EE3-B240-3998EE8D94BD}.Release|Win32.ActiveCfg = Release|Win32
+		{5F3DBE5F-A581-4EE3-B240-3998EE8D94BD}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
