@@ -21,4 +21,5 @@ void main()
 	SetEndOfFile(hFile);
 
 	CloseHandle(hFile);
+
 }
