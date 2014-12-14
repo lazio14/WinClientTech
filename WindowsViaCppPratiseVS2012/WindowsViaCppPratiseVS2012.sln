@@ -37,6 +37,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DeleteFileTest", "DeleteFil
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TempFileTest", "TempFileTest\TempFileTest.vcxproj", "{3955BF0A-541E-417B-A01C-A38EFD437B2B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileSizeTest", "FileSizeTest\FileSizeTest.vcxproj", "{FD6132AC-5A1D-4E9E-A0D9-3AE42B08B63D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -115,6 +117,10 @@ Global
 		{3955BF0A-541E-417B-A01C-A38EFD437B2B}.Debug|Win32.Build.0 = Debug|Win32
 		{3955BF0A-541E-417B-A01C-A38EFD437B2B}.Release|Win32.ActiveCfg = Release|Win32
 		{3955BF0A-541E-417B-A01C-A38EFD437B2B}.Release|Win32.Build.0 = Release|Win32
+		{FD6132AC-5A1D-4E9E-A0D9-3AE42B08B63D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FD6132AC-5A1D-4E9E-A0D9-3AE42B08B63D}.Debug|Win32.Build.0 = Debug|Win32
+		{FD6132AC-5A1D-4E9E-A0D9-3AE42B08B63D}.Release|Win32.ActiveCfg = Release|Win32
+		{FD6132AC-5A1D-4E9E-A0D9-3AE42B08B63D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
