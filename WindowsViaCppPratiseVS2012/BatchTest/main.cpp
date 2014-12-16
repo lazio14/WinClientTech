@@ -11,16 +11,17 @@ PTP_WORK g_pWorkItem = NULL;
 void NTAPI TaskHandler(PTP_CALLBACK_INSTANCE instance, PVOID Context, PTP_WORK Work)
 {
 	InterlockedIncrement(&g_nCurrentRunningTaskSum);
-	InterlockedIncrement(&g_nWorkIdx);
+	int workIdx = InterlockedIncrement(&g_nWorkIdx);
 	TCHAR szMsg[100] = {0};
-	StringCchPrintf(szMsg, _countof(szMsg), TEXT("[%u]Task %u is starting"),  GetCurrentThreadId(), g_nWorkIdx);
+	StringCchPrintf(szMsg, _countof(szMsg), TEXT("[%u]Task %u is starting"),  GetCurrentThreadId(), workIdx);
 	wcout << szMsg << endl;
-	Sleep(5000);
-	StringCchPrintf(szMsg, _countof(szMsg), TEXT("[%u]Task %u is done"),  GetCurrentThreadId(), g_nWorkIdx);
+	Sleep(1000);
+	StringCchPrintf(szMsg, _countof(szMsg), TEXT("[%u]Task %u is done"),  GetCurrentThreadId(), workIdx);
 	wcout << szMsg << endl;
-	if (InterlockedDecrement(&g_nCurrentRunningTaskSum))
+	if (InterlockedDecrement(&g_nCurrentRunningTaskSum) == 0)
 	{
-		wcout << "all is done" << endl;
+		StringCchPrintf(szMsg, _countof(szMsg), TEXT("[%u]all is done %d"),  GetCurrentThreadId(), workIdx);
+		wcout << szMsg << endl;
 	}
 }
 
