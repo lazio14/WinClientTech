@@ -45,6 +45,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileEventObj", "FileEventOb
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileAlertIO", "FileAlertIO\FileAlertIO.vcxproj", "{9FCF51AD-6535-4541-A166-222BC2850871}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TimedMsgBox", "TimedMsgBox\TimedMsgBox.vcxproj", "{149F445C-BC09-403A-8E1E-1CB2CB30262C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -139,6 +141,10 @@ Global
 		{9FCF51AD-6535-4541-A166-222BC2850871}.Debug|Win32.Build.0 = Debug|Win32
 		{9FCF51AD-6535-4541-A166-222BC2850871}.Release|Win32.ActiveCfg = Release|Win32
 		{9FCF51AD-6535-4541-A166-222BC2850871}.Release|Win32.Build.0 = Release|Win32
+		{149F445C-BC09-403A-8E1E-1CB2CB30262C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{149F445C-BC09-403A-8E1E-1CB2CB30262C}.Debug|Win32.Build.0 = Debug|Win32
+		{149F445C-BC09-403A-8E1E-1CB2CB30262C}.Release|Win32.ActiveCfg = Release|Win32
+		{149F445C-BC09-403A-8E1E-1CB2CB30262C}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
