@@ -23,9 +23,10 @@ void CALLBACK TimerProc(HWND hwnd,
 						UINT_PTR idEvent,
 						DWORD dwTime)
 {
+	char * buf = (char*)idEvent;
 	MessageBox(hwnd, TEXT("test"), TEXT("tip"), MB_OK | MB_ICONERROR);
 	Sleep(5000);
-	KillTimer(hwnd, g_nEventID);
+	//KillTimer(hwnd, g_nEventID);
 }
 
 int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
@@ -59,6 +60,11 @@ int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
 	{
 		if (!TranslateAccelerator(msg.hwnd, hAccelTable, &msg))
 		{
+			if (msg.message == WM_TIMER)
+			{
+				char * buf = "abcde";
+				msg.wParam = (WPARAM)buf;
+			}
 			TranslateMessage(&msg);
 			DispatchMessage(&msg);
 		}
@@ -168,6 +174,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	case WM_DESTROY:
 		PostQuitMessage(0);
 		break;
+	case WM_TIMER:
+	case 1:
+		return DefWindowProc(hWnd, message, wParam, lParam);
 	default:
 		return DefWindowProc(hWnd, message, wParam, lParam);
 	}
