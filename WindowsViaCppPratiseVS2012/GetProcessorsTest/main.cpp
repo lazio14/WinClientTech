@@ -37,17 +37,22 @@ void ShowProcessors()
 		}
 	}
 
-	cout << "core sum:" << procCoreCount << endl;
+	cout << "active cpu(s):" << procCoreCount << endl;
 	free(pBuffer);
 }
 
 void main()
 {
 	ShowProcessors();
-	system("pause");
+	
 	BOOL bIsWow = FALSE;
 	if (!IsWow64Process(GetCurrentProcess(), &bIsWow))
 	{
 		cout << "IsWow64Process invoke fail" << endl;
 	}
+
+	SYSTEM_INFO sinf;
+	GetSystemInfo(&sinf);
+
+	system("pause");
 }
