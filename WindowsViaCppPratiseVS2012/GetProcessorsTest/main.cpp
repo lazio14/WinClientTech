@@ -46,5 +46,8 @@ void main()
 	ShowProcessors();
 	system("pause");
 	BOOL bIsWow = FALSE;
-	IsWow64Process(GetCurrentProcess(), &bIsWow);
+	if (!IsWow64Process(GetCurrentProcess(), &bIsWow))
+	{
+		cout << "IsWow64Process invoke fail" << endl;
+	}
 }
