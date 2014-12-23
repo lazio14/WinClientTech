@@ -53,6 +53,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SettimerTest", "SettimerTes
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataAlignTest", "DataAlignTest\DataAlignTest.vcxproj", "{0DD3C980-D9D7-43BD-950B-285D8F69786C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GetProcessorsTest", "GetProcessorsTest\GetProcessorsTest.vcxproj", "{74DE0015-D687-406D-842D-FF167E0D8793}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -163,6 +165,10 @@ Global
 		{0DD3C980-D9D7-43BD-950B-285D8F69786C}.Debug|Win32.Build.0 = Debug|Win32
 		{0DD3C980-D9D7-43BD-950B-285D8F69786C}.Release|Win32.ActiveCfg = Release|Win32
 		{0DD3C980-D9D7-43BD-950B-285D8F69786C}.Release|Win32.Build.0 = Release|Win32
+		{74DE0015-D687-406D-842D-FF167E0D8793}.Debug|Win32.ActiveCfg = Debug|Win32
+		{74DE0015-D687-406D-842D-FF167E0D8793}.Debug|Win32.Build.0 = Debug|Win32
+		{74DE0015-D687-406D-842D-FF167E0D8793}.Release|Win32.ActiveCfg = Release|Win32
+		{74DE0015-D687-406D-842D-FF167E0D8793}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
