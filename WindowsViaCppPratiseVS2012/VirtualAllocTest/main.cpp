@@ -17,5 +17,8 @@ void main()
 
 	// 同时预定和调拨物理存储器
 	PVOID addr4 = VirtualAlloc(NULL, 6 * 1024, MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE);
+	
+
+	size_t page = GetLargePageMinimum();
 
 }
