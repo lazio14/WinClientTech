@@ -57,6 +57,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GetProcessorsTest", "GetPro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VirtualAllocTest", "VirtualAllocTest\VirtualAllocTest.vcxproj", "{154BEA7A-4200-476D-8B9D-EFE3117AB1D5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MemReset", "MemReset\MemReset.vcxproj", "{F29B99F0-FB1F-48FE-BA54-B296CB398292}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -175,6 +177,10 @@ Global
 		{154BEA7A-4200-476D-8B9D-EFE3117AB1D5}.Debug|Win32.Build.0 = Debug|Win32
 		{154BEA7A-4200-476D-8B9D-EFE3117AB1D5}.Release|Win32.ActiveCfg = Release|Win32
 		{154BEA7A-4200-476D-8B9D-EFE3117AB1D5}.Release|Win32.Build.0 = Release|Win32
+		{F29B99F0-FB1F-48FE-BA54-B296CB398292}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F29B99F0-FB1F-48FE-BA54-B296CB398292}.Debug|Win32.Build.0 = Debug|Win32
+		{F29B99F0-FB1F-48FE-BA54-B296CB398292}.Release|Win32.ActiveCfg = Release|Win32
+		{F29B99F0-FB1F-48FE-BA54-B296CB398292}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
