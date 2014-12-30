@@ -61,6 +61,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MemReset", "MemReset\MemRes
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stackUnderflow", "stackUnderflow\stackUnderflow.vcxproj", "{94B2D6A2-590A-45D4-A816-C4FC29508612}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "summation", "summation\summation.vcxproj", "{7991AE5F-8820-4FF9-8435-73567E8E9128}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -187,6 +189,10 @@ Global
 		{94B2D6A2-590A-45D4-A816-C4FC29508612}.Debug|Win32.Build.0 = Debug|Win32
 		{94B2D6A2-590A-45D4-A816-C4FC29508612}.Release|Win32.ActiveCfg = Release|Win32
 		{94B2D6A2-590A-45D4-A816-C4FC29508612}.Release|Win32.Build.0 = Release|Win32
+		{7991AE5F-8820-4FF9-8435-73567E8E9128}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7991AE5F-8820-4FF9-8435-73567E8E9128}.Debug|Win32.Build.0 = Debug|Win32
+		{7991AE5F-8820-4FF9-8435-73567E8E9128}.Release|Win32.ActiveCfg = Release|Win32
+		{7991AE5F-8820-4FF9-8435-73567E8E9128}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
