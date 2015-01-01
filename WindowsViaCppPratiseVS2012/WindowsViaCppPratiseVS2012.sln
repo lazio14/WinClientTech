@@ -63,6 +63,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stackUnderflow", "stackUnde
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "summation", "summation\summation.vcxproj", "{7991AE5F-8820-4FF9-8435-73567E8E9128}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppInst", "AppInst\AppInst.vcxproj", "{3710D311-6909-4941-B096-8839FC108736}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -193,6 +195,10 @@ Global
 		{7991AE5F-8820-4FF9-8435-73567E8E9128}.Debug|Win32.Build.0 = Debug|Win32
 		{7991AE5F-8820-4FF9-8435-73567E8E9128}.Release|Win32.ActiveCfg = Release|Win32
 		{7991AE5F-8820-4FF9-8435-73567E8E9128}.Release|Win32.Build.0 = Release|Win32
+		{3710D311-6909-4941-B096-8839FC108736}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3710D311-6909-4941-B096-8839FC108736}.Debug|Win32.Build.0 = Debug|Win32
+		{3710D311-6909-4941-B096-8839FC108736}.Release|Win32.ActiveCfg = Release|Win32
+		{3710D311-6909-4941-B096-8839FC108736}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
