@@ -65,6 +65,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "summation", "summation\summ
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppInst", "AppInst\AppInst.vcxproj", "{3710D311-6909-4941-B096-8839FC108736}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ViewCDiskChange", "ViewCDiskChange\ViewCDiskChange.vcxproj", "{AA0CC7DF-219C-43CA-BE11-C6FE5C980C00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -199,6 +201,10 @@ Global
 		{3710D311-6909-4941-B096-8839FC108736}.Debug|Win32.Build.0 = Debug|Win32
 		{3710D311-6909-4941-B096-8839FC108736}.Release|Win32.ActiveCfg = Release|Win32
 		{3710D311-6909-4941-B096-8839FC108736}.Release|Win32.Build.0 = Release|Win32
+		{AA0CC7DF-219C-43CA-BE11-C6FE5C980C00}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AA0CC7DF-219C-43CA-BE11-C6FE5C980C00}.Debug|Win32.Build.0 = Debug|Win32
+		{AA0CC7DF-219C-43CA-BE11-C6FE5C980C00}.Release|Win32.ActiveCfg = Release|Win32
+		{AA0CC7DF-219C-43CA-BE11-C6FE5C980C00}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
