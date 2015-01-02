@@ -14,7 +14,7 @@ void main()
 		return;
 	}
 
-	HANDLE hFileMapping = CreateFileMapping(hFile, NULL, PAGE_READWRITE, 0, 0, NULL);\
+	HANDLE hFileMapping = CreateFileMapping(hFile, NULL, PAGE_READWRITE, 0, 0, NULL);
 
 	PBYTE pbFile1 = (PBYTE)MapViewOfFile(hFileMapping, FILE_MAP_WRITE, 0, 0, 0);
 	PBYTE pbFile2 = (PBYTE)MapViewOfFile(hFileMapping, FILE_MAP_WRITE, 0, n64K, 0);
@@ -26,10 +26,10 @@ void main()
 	PSTR pchAnsi2 = (PSTR)pbFile2;
 	//cout << pchAnsi2 << endl;
 	pchAnsi2[nZeroOffset] = 0;
-	cout << pchAnsi2 << endl;
+	cout << pchAnsi2 << endl; // 两个视图中的数据是一致的。
 	
 	PSTR pchAnsi1 = (PSTR)pbFile1;
-	cout << pchAnsi1 + n64K << endl;
+	cout << pchAnsi1 + n64K<< endl;
 
 	UnmapViewOfFile(pbFile1);
 	UnmapViewOfFile(pbFile2);
