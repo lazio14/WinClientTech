@@ -1,0 +1,2 @@
+this file's name is filerec.txt
+this is second line
