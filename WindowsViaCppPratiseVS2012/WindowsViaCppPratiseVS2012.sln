@@ -71,6 +71,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileRev", "FileRev\FileRev.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TwoViewOfMap", "TwoViewOfMap\TwoViewOfMap.vcxproj", "{C289F2D8-9AA6-438D-B56C-E72C969B216A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MMFShare", "MMFShare\MMFShare.vcxproj", "{28E55057-65A1-463B-8E54-8849E042236C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -217,6 +219,10 @@ Global
 		{C289F2D8-9AA6-438D-B56C-E72C969B216A}.Debug|Win32.Build.0 = Debug|Win32
 		{C289F2D8-9AA6-438D-B56C-E72C969B216A}.Release|Win32.ActiveCfg = Release|Win32
 		{C289F2D8-9AA6-438D-B56C-E72C969B216A}.Release|Win32.Build.0 = Release|Win32
+		{28E55057-65A1-463B-8E54-8849E042236C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{28E55057-65A1-463B-8E54-8849E042236C}.Debug|Win32.Build.0 = Debug|Win32
+		{28E55057-65A1-463B-8E54-8849E042236C}.Release|Win32.ActiveCfg = Release|Win32
+		{28E55057-65A1-463B-8E54-8849E042236C}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
