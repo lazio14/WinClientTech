@@ -5,7 +5,6 @@ using namespace std;
 DWORD WINAPI ChildThread(LPVOID pvParam)
 {
 
-	// 进程创建线程时，Dll会收到DLL_THREAD_ATTACH消息
 	OutputDebugString(TEXT("================InvokeDll ChildThread================"));
 	return 0;
 }

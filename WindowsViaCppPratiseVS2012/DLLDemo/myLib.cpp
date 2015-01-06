@@ -28,11 +28,10 @@ BOOL WINAPI DllMain( HANDLE hDllHandle, DWORD dwReason, LPVOID lpreserved )
 	case DLL_PROCESS_ATTACH:
 		OutputDebugString(TEXT("================DLL_PROCESS_ATTACH================"));
 		OutputDebugString(TEXT("================may be dead lock================"));
-		// 进程创建线程时，Dll会收到DLL_THREAD_ATTACH消息
 		hThread = CreateThread(NULL, 0, ChildThread, NULL, 0, NULL);
-// 		WaitForSingleObject(hThread, INFINITE);
+ 		WaitForSingleObject(hThread, INFINITE);
  		OutputDebugString(TEXT("================not dead lock================"));
-// 		CloseHandle(hThread);
+ 		CloseHandle(hThread);
 		break;
 	case DLL_PROCESS_DETACH:
 		OutputDebugString(TEXT("================DLL_PROCESS_DETACH================"));
