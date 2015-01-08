@@ -6,14 +6,15 @@ int funcenstein()
 	int retVal = 5;
 	__try
 	{
-		return retVal;
+		goto ReturnVal;
 	}
 	__finally
 	{
 		retVal = 10;
 	}
 
-	return 15;
+ReturnVal:
+	return retVal;
 }
 
 void main()
