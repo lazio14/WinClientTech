@@ -30,11 +30,35 @@ int funcenstein()
 	return retVal;
 }
 
+DWORD FuncaDoodleDoo() 
+{
+	DWORD dwTemp = 0;
+	while (dwTemp < 10)
+	{
+		__try
+		{
+			if (dwTemp == 2)
+			{
+				continue;
+			}
+			if (dwTemp == 3)
+			{
+				break;
+			}
+		}
+		__finally
+		{
+			dwTemp++;
+		}
+		dwTemp++;
+	}
+	dwTemp += 10;
+	return dwTemp;
+}
+
 void main()
 {
-	g_sem = CreateSemaphore(NULL, 0, 1, NULL);
-	cout << funcenstein() << endl;
-	CreateThread(NULL, 0, ChildThread, NULL, 0, NULL);
+	cout << FuncaDoodleDoo() << endl;
 	system("pause");
 	
 }
