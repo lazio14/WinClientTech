@@ -56,9 +56,39 @@ DWORD FuncaDoodleDoo()
 	return dwTemp;
 }
 
+int funcenstein4()
+{
+	__try
+	{
+		return 1;
+	}
+	__finally
+	{
+		return 2;
+	}
+	return 3;
+}
+
+DWORD Funcarama4()
+{
+	DWORD dwResult = 0;
+	__try
+	{
+		__leave;
+		cout << "Fun4 try" << endl;
+		dwResult = 1;
+	}
+	__finally
+	{
+		cout << "func4 finally" << endl;
+	}
+	return dwResult;
+}
+
 void main()
 {
 	cout << FuncaDoodleDoo() << endl;
-	system("pause");
-	
+	cout << funcenstein4() << endl;
+	cout << Funcarama4() << endl;
+	system("pause");	
 }
