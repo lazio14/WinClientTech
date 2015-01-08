@@ -85,10 +85,39 @@ DWORD Funcarama4()
 	return dwResult;
 }
 
+DWORD AbnormalTerminatinFalseTest()
+{
+	__try
+	{
+
+	}
+	__finally
+	{
+		cout << "AbnormalTerminatinTest False: " << AbnormalTermination() << endl;
+	}
+	return 0;
+}
+
+DWORD AbnormalTerminatinTrueTest()
+{
+	__try
+	{
+		return 0;
+	}
+	__finally
+	{
+		cout << "AbnormalTerminatinTest TRUE: " << AbnormalTermination() << endl;
+	}
+}
+
 void main()
 {
 	cout << FuncaDoodleDoo() << endl;
 	cout << funcenstein4() << endl;
 	cout << Funcarama4() << endl;
+
+	AbnormalTerminatinTrueTest();
+	AbnormalTerminatinFalseTest();
 	system("pause");	
+
 }
